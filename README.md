@@ -1,39 +1,33 @@
-# node-js-getting-started
+# Build a Basic CRUD App with Vue.js, Node and MongoDB
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+Build a simple CRUD app (Create, Read, Update and Delete) using Node, MongoDB and Vue.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+## Requirements
 
-## Running Locally
+- [Node.js](http://nodejs.org/)
+- [MongoDB](https://www.mongodb.org/)
+- [Postman](https://www.getpostman.com/)
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+## Installation Steps (if applicable)
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
+1. Start MongoDB running locally with `mongod`
+2. Clone the repo
+3. cd vocab-builder/server
+4. npm i
+5. npm run start
+6. cd ../front-end
+7. npm i
+8. npm run serve
+9. Go to http://localhost:8080/
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+## License
 
-## Deploying to Heroku
+SitePoint's code archives and code examples are licensed under the MIT license.
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
+Copyright © 2018 SitePoint
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Documentation
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
