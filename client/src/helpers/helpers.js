@@ -11,7 +11,7 @@ Vue.use(VueFlashMessage, {
 });
 
 const vm = new Vue();
-const baseURL = 'http://van-todo.herokuapp.com/words/';
+const baseURL = 'https://van-todo.herokuapp.com/words/';
 
 const handleError = fn => (...params) =>
   fn(...params).catch(error => {
