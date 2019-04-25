@@ -10,7 +10,7 @@ const routes = require('./api/routes/vocabRoutes');
 mongoose.Promise = global.Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.connect(
-  process.env.MONGODB_URI,
+  process.env.MONGODB_URI || 'mongodb://localhost/rotten-potatoes',
   { useNewUrlParser: true }
 );
 
