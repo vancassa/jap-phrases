@@ -10,7 +10,7 @@ const routes = require('./api/routes/vocabRoutes');
 mongoose.Promise = global.Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.connect(
-  'mongodb://localhost/vocab-builder',
+  'mongodb://heroku_jpfkc4bg:4fk9su0fn9fpm1lgu3p84eeqtk@ds147436.mlab.com:47436/heroku_jpfkc4bg',
   { useNewUrlParser: true }
 );
 
