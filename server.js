@@ -11,7 +11,7 @@ mongoose.Promise = global.Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.connect(
   process.env.MONGODB_URI,
-  { useNewUrlParser: true }
+  { useNewUrlParser: true, dbName: 'vocab-builder' }
 );
 
 const port = process.env.PORT || 3000;
