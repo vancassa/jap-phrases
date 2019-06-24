@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <router-link to="/login/yes">Click here</router-link> -->
     <h1>Words</h1>
     <table id="words" class="ui celled compact table">
       <thead>
@@ -24,6 +23,7 @@
         </td>
       </tr>
     </table>
+    <button @click="giveAdminAccess" class="hidden">Click here</button>
   </div>
 </template>
 
@@ -47,6 +47,9 @@ export default {
       this.flash('Word deleted sucessfully!', 'success');
       const newWords = this.words.filter(word => word._id !== id);
       this.words = newWords;
+    },
+    giveAdminAccess() {
+      this.login = true;
     }
   },
   async mounted() {
@@ -57,3 +60,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.hidden {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+</style>
