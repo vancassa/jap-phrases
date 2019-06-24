@@ -57,7 +57,7 @@ export default {
         this.score += 1;
       } else {
         this.flash('Wrong!', 'error', { timeout: 1000 });
-        this.incorrectGuesses.push(this.currWord.japanese);
+        this.incorrectGuesses.push(this.currWord.english);
       }
 
       this.japanese = '';
