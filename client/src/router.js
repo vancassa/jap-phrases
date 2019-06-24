@@ -15,25 +15,21 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/words'
-    },
-    {
-      path: '/words',
       name: 'words',
       component: Words
     },
     {
-      path: '/words/new',
+      path: '/new',
       name: 'new-word',
       component: New
     },
     {
-      path: '/words/:id',
+      path: '/:id',
       name: 'show',
       component: Show
     },
     {
-      path: '/words/:id/edit',
+      path: '/:id/edit',
       name: 'edit',
       component: Edit
     },
