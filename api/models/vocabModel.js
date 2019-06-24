@@ -6,11 +6,11 @@ const VocabSchema = new Schema(
   {
     english: {
       type: String,
-      required: 'English word cannot be blank'
+      required: 'English words cannot be blank'
     },
-    german: {
+    japanese: {
       type: String,
-      required: 'German word cannot be blank'
+      required: 'Japanese words cannot be blank'
     }
   },
   { collection: 'vocab' }

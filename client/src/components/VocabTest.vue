@@ -5,9 +5,9 @@
     <form action="#" @submit.prevent="onSubmit">
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="germany flag"></i> German
+          <i class="japan flag"></i> Japanese
         </div>
-        <input type="text" readonly :disabled="testOver" :value="currWord.german"/>
+        <input type="text" readonly :disabled="testOver" :value="currWord.japanese"/>
       </div>
       <div class="ui labeled input fluid">
         <div class="ui label">
@@ -57,7 +57,7 @@ export default {
         this.score += 1;
       } else {
         this.flash('Wrong!', 'error', { timeout: 1000 });
-        this.incorrectGuesses.push(this.currWord.german);
+        this.incorrectGuesses.push(this.currWord.japanese);
       }
 
       this.english = '';

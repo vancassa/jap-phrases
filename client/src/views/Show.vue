@@ -4,9 +4,9 @@
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-        <i class="germany flag"></i> German
+        <i class="japan flag"></i> Japanese
       </div>
-      <input type="text" readonly  :value="word.german"/>
+      <input type="text" readonly  :value="word.japanese"/>
     </div>
     <div class="ui labeled input fluid">
       <div class="ui label">
