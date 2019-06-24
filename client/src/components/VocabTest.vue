@@ -5,15 +5,15 @@
     <form action="#" @submit.prevent="onSubmit">
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="japan flag"></i> Japanese
+          <i class="japan flag"></i> English
         </div>
-        <input type="text" readonly :disabled="testOver" :value="currWord.japanese"/>
+        <input type="text" readonly :disabled="testOver" :value="currWord.english"/>
       </div>
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="united kingdom flag"></i> English
+          <i class="united kingdom flag"></i> Japanese
         </div>
-        <input type="text" placeholder="Enter word..." v-model="english" :disabled="testOver" autocomplete="off" />
+        <input type="text" placeholder="Enter word..." v-model="japanese" :disabled="testOver" autocomplete="off" />
       </div>
 
       <button class="positive ui button" :disabled="testOver">Submit</button>
@@ -40,7 +40,7 @@ export default {
       incorrectGuesses: [],
       result: '',
       resultClass: '',
-      english: '',
+      japanese: '',
       score: 0,
       testOver: false
     };
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     onSubmit: function() {
-      if (this.english === this.currWord.english) {
+      if (this.japanese === this.currWord.japanese) {
         this.flash('Correct!', 'success', { timeout: 1000 });
         this.score += 1;
       } else {
@@ -60,7 +60,7 @@ export default {
         this.incorrectGuesses.push(this.currWord.japanese);
       }
 
-      this.english = '';
+      this.japanese = '';
       this.randWords.shift();
 
       if (this.randWords.length === 0) {
