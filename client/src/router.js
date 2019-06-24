@@ -24,12 +24,12 @@ export default new Router({
       component: New
     },
     {
-      path: '/:id',
+      path: '/words/:id',
       name: 'show',
       component: Show
     },
     {
-      path: '/:id/edit',
+      path: '/words/:id/edit',
       name: 'edit',
       component: Edit
     },
