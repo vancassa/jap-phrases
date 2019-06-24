@@ -11,7 +11,7 @@
       </div>
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="japanese flag"></i> Japanese
+          <i class="japan flag"></i> Japanese
         </div>
         <input type="text" placeholder="Enter word..." v-model="japanese" :disabled="testOver" autocomplete="off" />
       </div>
