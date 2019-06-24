@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <router-link to="/login/yes">Click here</router-link> -->
     <h1>Words</h1>
     <table id="words" class="ui celled compact table">
       <thead>
@@ -33,7 +34,8 @@ export default {
   name: 'words',
   data() {
     return {
-      words: []
+      words: [],
+      login: false
     };
   },
   methods: {
@@ -49,6 +51,9 @@ export default {
   },
   async mounted() {
     this.words = await api.getWords();
+    if (this.$route.params.admin === 'yes') {
+      this.login = true;
+    }
   }
 };
 </script>

@@ -19,6 +19,11 @@ export default new Router({
       component: Words
     },
     {
+      path: '/login/:admin',
+      name: 'admin',
+      component: Words
+    },
+    {
       path: '/new',
       name: 'new-word',
       component: New
