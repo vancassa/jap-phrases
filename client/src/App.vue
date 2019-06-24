@@ -6,7 +6,7 @@
           <router-link to="/words" exact class="item">
             <i class="comment outline icon"></i> Words
           </router-link>
-          <router-link to="/words/new" class="item">
+          <router-link to="/words/new" class="item" v-if="login">
             <i class="plus circle icon"></i> New
           </router-link>
           <router-link to="/test" class="item">

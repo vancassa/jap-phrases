@@ -5,13 +5,13 @@
     <form action="#" @submit.prevent="onSubmit">
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="japan flag"></i> English
+          <i class="united kingdom flag"></i> English
         </div>
         <input type="text" readonly :disabled="testOver" :value="currWord.english"/>
       </div>
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="united kingdom flag"></i> Japanese
+          <i class="japanese flag"></i> Japanese
         </div>
         <input type="text" placeholder="Enter word..." v-model="japanese" :disabled="testOver" autocomplete="off" />
       </div>

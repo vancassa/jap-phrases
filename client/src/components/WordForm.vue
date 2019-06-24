@@ -6,7 +6,7 @@
       <div class="ui label">
         <i class="japan flag"></i> Japanese
       </div>
-      <input type="text" placeholder="Enter word..." v-model="word.japanese" />
+      <input type="text" ref="firstInput" placeholder="Enter word..." v-model="word.japanese" />
     </div>
 
     <div class="ui labeled input fluid">
@@ -46,6 +46,10 @@ export default {
         this.errorsPresent = true;
       } else {
         this.$emit('createOrUpdate', this.word);
+        // Clear form
+        this.word.japanese = '';
+        this.word.english = '';
+        this.$refs.firstInput.focus();
       }
     }
   }
