@@ -14,6 +14,7 @@
           </router-link>
         </div>
       </div>
+      <button @click="giveAdminAccess" class="hidden">Click here</button>
     </div>
 
     <div class="ui text container">
@@ -30,7 +31,17 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data() {
+    return {
+      login: false
+    }
+  },
+  methods: {
+    giveAdminAccess() {
+      this.login = true;
+    }
+  }
 };
 </script>
 
@@ -57,5 +68,11 @@ div.input {
 button.ui.button {
   margin-top: 15px;
   display: block;
+}
+
+.hidden {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 </style>
