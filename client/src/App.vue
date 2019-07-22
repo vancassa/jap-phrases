@@ -14,7 +14,7 @@
           </router-link>
         </div>
       </div>
-      <button @click="giveAdminAccess" class="hidden">Click here</button>
+      <button @click="giveAdminAccess" class="hidden">Secret button</button>
     </div>
 
     <div class="ui text container">
