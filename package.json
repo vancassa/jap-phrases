@@ -16,7 +16,7 @@
     "dotenv": "^8.0.0",
     "event-stream": "^4.0.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.12"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
